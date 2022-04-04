@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Volume of a Pyramid, with JS">
+    <meta name="description" content="Volume of a Sphere, with JS">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Zaida Hammel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,64 +25,34 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Volume of a Pyramid, with JS</span>
+          <span class="mdl-layout-title">Volume of a Sphere, with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <table>
           <tr>
             <th>
-              <img src="./images/pyramid.png" alt="pyramid" width="auto" height="auto" />
+              <img src="./images/sphere.png" alt="sphere" width="auto" height="auto" />
             </th>
             <th>
-              <h4>Formulas</h4>
-              <h5>V = (L x W x H) ÷ 3</h5>
+              <h5>V = 3/4πr³</h5>
             </th>
           </tr>
         </table>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Length (mm):</p>
+          <p>Radius:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="number"
               step=".01"
-              id="length-of-pyramid"
+              id="radius-of-sphere"
             />
-            <label class="mdl-textfield__label" for="length-of-pyramid">length...</label>
+            <label class="mdl-textfield__label" for="radius-of-sphere">radius...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Width (mm):</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              id="width-of-pyramid"
-            />
-            <label class="mdl-textfield__label" for="width-of-pyramid">width...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Height (mm):</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              id="height-of-pyramid"
-            />
-            <label class="mdl-textfield__label" for="height-of-pyramid">height...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
